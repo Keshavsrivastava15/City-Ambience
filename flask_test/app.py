@@ -108,7 +108,7 @@ def pred():
         
             query=request.form['query']
             city_name=request.form['query']
-            url = 'http://api.openweathermap.org/data/2.5/weather?q={}&units=metric&APPID=46d978f91cb52cddcafdc43b6a42f57c'
+            url = 'http://api.openweathermap.org/data/2.5/weather?q={}&units=metric&APPID='
             
             response = requests.get(url.format(city_name.title())).json()
             try:
